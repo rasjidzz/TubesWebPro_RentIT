@@ -33,7 +33,7 @@
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://telkomuniversity.ac.id/en/">
                 <img src="/Assets/Logo_TelkomUniversity.jpeg" style="max-width: 30px; height: auto;">
             </a>
         </div>
@@ -41,7 +41,7 @@
 
     <?= $this->renderSection('content'); ?>
 
-    <footer class="bg-dark p-3 fixed-bottom">
+    <!-- <footer class="bg-dark p-3 fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -50,9 +50,26 @@
                 <div class="col-md-6">
                     <ul class="list-inline text-end">
                         <li class="list-inline-item"><a href="#"><img src="/Assets/face.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="/Assets/insta.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="/Assets/Linked.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
-                        <li class="list-inline-item"><a href="#"><img src="/Assets/twit.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/telkomuniversity/"><img src="/Assets/insta.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/school/telkom-university/"><img src="/Assets/Linked.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/TelUniversity"><img src="/Assets/twit.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <footer class="bg-dark p-3 fixed-bottom">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="/Assets/Logo_Rentit.png" alt="Company Logo" class="img-fluid" style="max-width: 100px; height: auto;">
+                </div>
+                <div class="col-md-6 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><img src="/Assets/face.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/telkomuniversity/"><img src="/Assets/insta.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/school/telkom-university/"><img src="/Assets/Linked.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/TelUniversity"><img src="/Assets/twit.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
                     </ul>
                 </div>
             </div>
@@ -62,6 +79,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

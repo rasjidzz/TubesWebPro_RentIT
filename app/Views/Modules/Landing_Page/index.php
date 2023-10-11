@@ -2,20 +2,20 @@
 
 <?= $this->section('content'); ?>
 
-<div class="container position-relative" style="background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh;">
-
-    <!-- Elemen overlay -->
-    <div class="overlay"></div>
-
-    <!-- Konten Anda akan ditempatkan di sini -->
-    <div class="position-absolute top-50 start-50 translate-middle" style="z-index: 1; text-align: center; color: white;">
-        <h1>SELAMAT DATANG, MAU SEWA FASILITAS ?</h1>
-        <h1>MASUK PAKAI AKUN SSO DULU YUK ?</h1>
+<div class="container position-relative rounded-3 " style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh; font-family: 'Open Sans', sans-serif;">
+    <div class="overlay rounded-3">
+        <div class="m-5" style="text-align: center; color: white;">
+            <h1>SELAMAT DATANG, MAU SEWA FASILITAS ?</h1>
+            <h1>MASUK PAKAI AKUN SSO DULU YUK ?</h1>
+        </div>
     </div>
 </div>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
     .overlay {
         position: absolute;
+        margin: auto;
         top: 0;
         left: 0;
         width: 100%;
