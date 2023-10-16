@@ -34,7 +34,12 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col" style="text-align: center; color: white;">adsadaa</div>
+                <div class="col" style="text-align: start; color: white;">
+                    <p class="fw-bold">Address</p>
+                    <p>Gedung Panehan Pasca Sarjana Lantai 1,
+                        Jl. Telekomunikasi Terusan Buah Batu,
+                        Bandung - 40257, Indonesia</p>
+                </div>
                 <div class="col-6" style="text-align: center;">
                     <div class="container" style="background-color: #f0f0f0; padding: 20px;">
                         <p class="fw-normal" style="font-weight: bold">
@@ -42,18 +47,26 @@
                         </p>
                         <div class="row">
                             <div class="col">
+                                <img src="/Assets/gedung.png" alt="" style="max-width: 70px;"> <br>
                                 Gedung
                             </div>
                             <div class="col">
+                                <img src="/Assets/kelas.png" alt="" style="max-width: 70px;"><br>
                                 Kelas
                             </div>
                             <div class="col">
+                                <img src="/Assets/olahraga.png" alt="" style="max-width: 70px;"> <br>
                                 Olahraga
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col" style="text-align: center; color: white">asdadasd</div>
+                <div class="col" style="text-align: end; color: white">
+                    <p class="fw-bold">Contact Us</p>
+                    <p>E-Mail: clove@telkomuniversity.ac.id
+                        WhatsApp Khusus Dosen: +62 821-1666-3563 <br>
+                        WhatsApp Khusus Mahasiswa: +62 812-2200-1813</p>
+                </div>
             </div>
         </div>
     </div>
