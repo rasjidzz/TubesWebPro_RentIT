@@ -24,12 +24,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav fs-5">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= base_url('/') ?>">Home</a>
+                        <a class="nav-link" aria-current="page" href="<?= base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Facility</a>
+                        <a class="nav-link" href="">Ini Auth Page</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
                     <img src="/Assets/Logo_Rentit.png" alt="Company Logo" class="img-fluid" style="max-width: 120px; height: auto;">
                 </div>
                 <div class="col-md-6 text-center">
-                    <ul class="list-inline mt-3">
+                    <ul class="list-inline">
                         <li class="list-inline-item"><a href="https://www.facebook.com/telkomuniversity"><img src="/Assets/face.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/telkomuniversity/"><img src="/Assets/insta.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com/school/telkom-university/"><img src="/Assets/Linked.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
