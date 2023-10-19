@@ -4,16 +4,16 @@
 
 <section>
     <div class="container" id="container1">
-        <div class="container position-relative rounded-3" style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 50vh; font-family: 'Open Sans', sans-serif; border-radius: 25px;">
+        <div class="container position-relative rounded-3" style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh; font-family: 'Open Sans', sans-serif; border-radius: 25px;">
             <div class=" overlay rounded-3">
-                <div class="row">
-                    <div class="mt-5" style="text-align: center; color: white;">
+                <div class="row mt-5">
+                    <!-- <div class="" style="text-align: center; color: white;">
                         <h1 style="font-weight: bold; color: white;">SELAMAT DATANG, MAU SEWA FASILITAS ?</h1>
                         <h1 style="font-weight: bold; color: white;">MASUK PAKAI AKUN SSO DULU YUK ?</h1>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="row ">
-                    <div class="mt-5" style="text-align: center;">
+                <div class="row mt-5">
+                    <!-- <div class="" style="text-align: center;">
                         <h1 style="color: white;">Sign In</h1>
                     </div>
                     <div class="mt-3" style="text-align: center;">
@@ -21,8 +21,26 @@
                             <img src="/Assets/365Logo.png" alt="Office 365 Logo" style="max-width: 20px; margin-right: 5px;">
                             Connect with Office 365
                         </a>
+                    </div> -->
+                    <div class="" style="text-align: center; color: white;">
+                        <h1 style="font-weight: bold; color: white;">SELAMAT DATANG, MAU SEWA FASILITAS ?</h1>
+                        <h1 style="font-weight: bold; color: white;">MASUK PAKAI AKUN SSO DULU YUK ?</h1>
                     </div>
                 </div>
+                <!-- <div class="row mt-5"></div> -->
+                <div class="row mt-5">
+                    <div class="" style="text-align: center;">
+                        <h1 style="color: white;">Sign In</h1>
+                    </div>
+                    <div class="mt-3" style="text-align: center;">
+                        <a class="btn btn-light" style="width: 400px; border-radius: 15px;" href="<?= base_url('/login') ?>">
+                            <img src="/Assets/365Logo.png" alt="Office 365 Logo" style="max-width: 20px; margin-right: 5px;">
+                            Connect with Office 365
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5"></div>
+                <div class="row mt-5"></div>
                 <div class="row mt-5">
                     <div class="col ms-3" style="text-align: start; color: white;">
                         <p class="fw-bold">Address</p>
@@ -77,12 +95,13 @@
         z-index: 0;
     }
 
+    /* 
     #container1 {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 80vh;
-    }
+    } */
 </style>
 
 <?= $this->endSection(); ?>
