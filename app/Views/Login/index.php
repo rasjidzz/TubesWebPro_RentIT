@@ -77,10 +77,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group  row my-3">
-                                        <button class="btn btn-light btn-round btn-block text-dark" type="submit">
+                                        <a class="btn btn-light btn-round btn-block text-dark" type="submit" onclick="login()">
                                             Log In
                                             <i class="bi bi-arrow-right-circle"></i>
-                                        </button>
+                                        </a>
+                                        <!-- <button class="btn btn-light btn-round btn-block text-dark" type="submit">
+                                            Log In
+                                            <i class="bi bi-arrow-right-circle"></i>
+                                        </button> -->
                                     </div>
                                 </form>
                             </div>
@@ -96,3 +100,19 @@
 
 
 </html>
+
+<script>
+    function login() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        console.log('gest');
+        console.log('username : ' + username);
+        console.log('password : ' + password);
+        if (username != 'test' || password != 'inipassword') {
+            alert('Password dan Username Salah!');
+        } else {
+            console.log('password benar!');
+            window.location.href = '/homepage';
+        }
+    }
+</script>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?= $title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
@@ -15,27 +15,40 @@
 </style>
 
 <body>
+    <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-5">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?= base_url('/') ?>">Home</a>
+                        <a class="nav-link <?= uri_string() === 'homepage' ? 'active' : '' ?>" href="<?= base_url('/homepage') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Ini Auth Page</a>
+                        <a class="nav-link <?= uri_string() === 'facility' ? 'active' : '' ?>" href="<?= base_url('/facility') ?>">Facility</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Pesanan</a></li>
+                            <li><a class="dropdown-item" href="#">Pembatalan</a></li>
+                            <li><a class="dropdown-item" href="#">Lapor Kerusakan</a></li>
+                            <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="https://telkomuniversity.ac.id/en/">
-                <img src="/Assets/Logo_TelkomUniversity.jpeg" style="max-width: 30px; height: auto;">
-            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 

@@ -8,6 +8,9 @@ class LandingPage extends BaseController
 {
     public function index()
     {
-        return view('Modules/Landing_Page/index');
+        $data = [
+            'title' => 'Landing Page'
+        ];
+        return view('Modules/Landing_Page/index', $data);
     }
 }
