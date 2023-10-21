@@ -4,13 +4,13 @@ namespace App\Controllers\Modules;
 
 use App\Controllers\BaseController;
 
-class LandingPage extends BaseController
+class Facility extends BaseController
 {
     public function index()
     {
         $data = [
-            'title' => 'Landing Page'
+            'title' => 'Facility'
         ];
-        return view('Modules/Landing_Page/index', $data);
+        return view('Modules/Facility/index', $data);
     }
 }

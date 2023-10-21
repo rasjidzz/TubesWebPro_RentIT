@@ -18,32 +18,41 @@
     <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav fs-5">
                     <li class="nav-item">
-                        <a class="nav-link <?= uri_string() === '' ? 'active' : '' ?>" href="<?= base_url('/homepage') ?>">Home</a>
+                        <a class="nav-link <?= uri_string() === 'homepage' ? 'active' : '' ?>" href="<?= base_url('/homepage') ?>">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'facility' ? 'active' : '' ?>" href="<?= base_url('/facility') ?>">Facility</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Pesanan</a></li>
+                            <li><a class="dropdown-item" href="#">Pembatalan</a></li>
+                            <li><a class="dropdown-item" href="#">Lapor Kerusakan</a></li>
+                            <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="https://telkomuniversity.ac.id/en/">
-                <img src="/Assets/Logo_TelkomUniversity.jpeg" style="max-width: 30px; height: auto;">
-            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
     <?= $this->renderSection('content'); ?>
-
-
-    <!-- Ambil Footer -->
 
     <footer class="bg-dark p-3 fixed-bottom">
         <div class="container-fluid">
@@ -52,7 +61,7 @@
                     <img src="/Assets/Logo_Rentit.png" alt="Company Logo" class="img-fluid" style="max-width: 120px; height: auto;">
                 </div>
                 <div class="col-md-6 text-center">
-                    <ul class="list-inline mt-3">
+                    <ul class="list-inline">
                         <li class="list-inline-item"><a href="https://www.facebook.com/telkomuniversity"><img src="/Assets/face.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/telkomuniversity/"><img src="/Assets/insta.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
                         <li class="list-inline-item"><a href="https://www.linkedin.com/school/telkom-university/"><img src="/Assets/Linked.png" alt="" class="img-fluid" style="max-width: 30px; height: auto;"></a></li>
