@@ -15,8 +15,9 @@
 </style>
 
 <body>
+    <!-- NAVBAR -->
     <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky top">
         <div class="container-fluid">
             <a class="navbar-brand" href="">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
@@ -51,10 +52,12 @@
             </form>
         </div>
     </nav>
+    <!-- NAVBAR -->
 
     <?= $this->renderSection('content'); ?>
 
-    <footer class="bg-dark p-3 fixed-bottom">
+    <!-- FOOTER -->
+    <footer class="bg-dark p-3 ">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center">
@@ -71,6 +74,7 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
