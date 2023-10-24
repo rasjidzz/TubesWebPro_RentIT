@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template_nonAuth'); ?>
+<?= $this->extend('layout/template_auth'); ?>
 
 <?= $this->section('content'); ?>
 
@@ -85,7 +85,7 @@
 
     <section>
         <div class="container border border-1 border-dark rounded-2" style="height: 350px;">
-            <h3 id="upload" class="text-center mb-5 fw-normal">Upload Dokumen Pendukung</h3>
+            <h3 id="upload" class="text-center mb-5 fw-normal mt-3">Upload Dokumen Pendukung</h3>
             <div class="dropArea" style="position: relative; border: 2px dashed #ccc; padding: 20px; text-align: center; height:150px;">
                 <input class="file-input" type="file" accept=".pdf, .docx" id="fileInput" multiple style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
                 <i id="logoDL" class="fs-1 mdi mdi-arrow-down-box mt-3"></i>
@@ -143,6 +143,8 @@
 
             displaySelectedFiles();
         }
+
+        console.log(selectedFiles);
     });
 
     function displaySelectedFiles() {
