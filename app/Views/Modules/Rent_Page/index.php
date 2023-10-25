@@ -130,6 +130,8 @@
             }
 
             displaySelectedFiles();
+
+            console.log(selectedFiles);
         }
     });
 
