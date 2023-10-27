@@ -18,8 +18,6 @@
         .bg {
             background: url('Assets/loginbg.jpg') no-repeat center center fixed;
             background-size: cover;
-            /* Untuk memastikan bahwa gambar background menutupi seluruh area */
-            /* Tambahan gaya CSS jika diperlukan */
         }
 
         .navbar-custom {
@@ -31,7 +29,7 @@
 </head>
 
 <body class="account-body bg opacity-25">
-    <nav class="navbar navbar-light bg-white navbar-custom">
+    <nav class="navbar navbar-light bg-white navbar-custom sticky-top">
         <div class="mx-auto my-0 order-0 order-md-1 position-relative">
             <a class="navbar-brand" href="<?= base_url('/'); ?>">
                 <img src="/Assets/Logo_Rentit.png" width="150">
