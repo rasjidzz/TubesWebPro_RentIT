@@ -45,7 +45,7 @@
 
     <!-- Ambil Footer -->
 
-    <footer class="bg-dark p-3 ">
+    <footer class="bg-dark p-3">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center">
