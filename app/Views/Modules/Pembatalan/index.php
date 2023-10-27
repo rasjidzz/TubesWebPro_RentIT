@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template_nonAuth'); ?>
+<?= $this->extend('layout/template_Auth'); ?>
 
 <?= $this->section('content'); ?>
 
