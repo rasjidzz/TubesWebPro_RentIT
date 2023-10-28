@@ -16,13 +16,18 @@
             <li><a class="dropdown-item" href="#">namaGedung</a></li>
         </ul>
     </div>
-    <br>
-    <br>
-    <div class="container border border-1 border-dark rounded-2 " style="display: flex; align-items: center;">
-        <img src="https://i.pinimg.com/1200x/3a/0a/90/3a0a90699daccb5c837115baf5f28ca0.jpg" class="img-fluid" id="gambar_gedung" style="width: 170px; height: 130px; object-fit: cover;" alt="gedung">
-        <div style="margin-left: 30px;" class="font-family-Open Sans">
-            <p class="fw-bold fs-3" id="nama_gedung">Nama gedung</p>
-            <p class="text-danger" id="harga_gedung">Harga</p>
+    <div class="card mb-3 mt-5">
+        <div class="row g-0">
+            <div class="col-6 col-md-2">
+                <img src="https://i.pinimg.com/1200x/3a/0a/90/3a0a90699daccb5c837115baf5f28ca0.jpg" class="card-img" id="gedung_bayar" style="height: 160px; object-fit: cover;" alt="gedung">
+            </div>
+            <div class="col-6 col-md-10">
+                <div class="card-body">
+                    <h5 class="card-title fs-2 font-family-Open Sans" id="nama_bayar">Momo Hirai</h5>
+                    <br>
+                    <p class="card-text text-danger font-family-Open Sans" id="harga_bayar">🧡🧡</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
