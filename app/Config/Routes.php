@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/pembatalan', 'Modules\PembatalanPage::index');
 $routes->get('/pembayaran/tagihan', 'Modules\PembayaranPage2::index');
+$routes->get('/status', 'Modules\StatusPage::index');

@@ -2,11 +2,11 @@
 
 <?= $this->section('content'); ?>
 
-<div class="container"></div>
-<h1 class="text-center"> PEMBATALAN</h1>
+<div class="container-fluid"></div>
+<h1 class="text-center font-family-Open Sans fw-bold"> PEMBATALAN</h1>
 <br><br><br>
 <div class="container">
-    <h3>Pesanan yang bisa dibatalkan</h3>
+    <h3 class="font-family-Open Sans fw-bold">Pesanan yang bisa dibatalkan</h3>
     <br>
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -20,7 +20,7 @@
     <br>
     <div class="container border border-1 border-dark rounded-2 " style="display: flex; align-items: center;">
         <img src="https://i.pinimg.com/1200x/3a/0a/90/3a0a90699daccb5c837115baf5f28ca0.jpg" class="img-fluid" id="gambar_gedung" style="width: 170px; height: 130px; object-fit: cover;" alt="gedung">
-        <div style="margin-left: 30px;">
+        <div style="margin-left: 30px;" class="font-family-Open Sans">
             <p class="fw-bold fs-3" id="nama_gedung">Nama gedung</p>
             <p class="text-danger" id="harga_gedung">Harga</p>
         </div>
@@ -31,7 +31,7 @@
 <br>
 <section>
     <div class="container border border-1 border-dark rounded-2" style="height: 350px;">
-        <h3 id="upload" class="text-center mb-5 fw-normal">Upload Dokumen Pendukung</h3>
+        <h3 id="upload" class="text-center mb-5 fw-normal font-family-Open Sans">Upload Dokumen Pendukung</h3>
         <div class="dropArea" style="position: relative; border: 2px dashed #ccc; padding: 20px; text-align: center; height:150px;">
             <input class="file-input" type="file" accept=".pdf, .docx" id="fileInput" multiple style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
             <i id="logoDL" class="fs-1 mdi mdi-arrow-down-box mt-3"></i>
