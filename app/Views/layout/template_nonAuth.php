@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -15,8 +17,8 @@
 </style>
 
 <body>
-    <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="text-white py-2 pl-2 sticky-top" style="background-color: #b6252a;"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
@@ -44,7 +46,6 @@
 
 
     <!-- Ambil Footer -->
-
     <footer class="bg-dark p-3">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">

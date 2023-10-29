@@ -7,6 +7,8 @@
     <title><?= $title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/62f756257e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -16,9 +18,8 @@
 </style>
 
 <body>
-    <!-- NAVBAR -->
-    <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky top">
+    <div class="text-white py-2 pl-2 sticky-top" style="background-color: #b6252a;"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid gap-3 mx-2">
             <a class="navbar-brand" href="">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
@@ -40,8 +41,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Pesanan</a></li>
-                            <li><a class="dropdown-item" href="#">Pembatalan</a></li>
-                            <li><a class="dropdown-item" href="#">Lapor Kerusakan</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('/pembatalan') ?>">Pembatalan</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('/laporankerusakan') ?>">Lapor Kerusakan</a></li>
                             <li><a class="dropdown-item" href="#">Riwayat</a></li>
                         </ul>
                     </li>
@@ -53,7 +54,7 @@
                 </a>
                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    <li><a class="dropdown-item" href="<?php echo site_url('/status') ?>">Status Pemesanan</a></li>
+                    <li><a class="dropdown-item" href="<? base_url('/status') ?>">Status Pemesanan</a></li>
                 </ul>
             </div>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -64,9 +65,8 @@
     <!-- NAVBAR -->
 
     <?= $this->renderSection('content'); ?>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark p-3 ">
+  
+    <footer class="bg-dark p-3">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center">
