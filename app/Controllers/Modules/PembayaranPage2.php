@@ -4,13 +4,13 @@ namespace App\Controllers\Modules;
 
 use App\Controllers\BaseController;
 
-class PembatalanPage extends BaseController
+class PembayaranPage2 extends BaseController
 {
     public function index()
     {
         $data = [
-            'title' => 'Pembatalan'
+            'title' => 'Pembayaran2'
         ];
-        return view('Modules/Pembatalan/index', $data);
+        return view('Modules/Pembayaran2/index', $data);
     }
 }

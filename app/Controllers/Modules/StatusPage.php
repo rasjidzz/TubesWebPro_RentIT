@@ -4,13 +4,13 @@ namespace App\Controllers\Modules;
 
 use App\Controllers\BaseController;
 
-class PembatalanPage extends BaseController
+class StatusPage extends BaseController
 {
     public function index()
     {
         $data = [
-            'title' => 'Pembatalan'
+            'title' => 'Status Pesanan'
         ];
-        return view('Modules/Pembatalan/index', $data);
+        return view('Modules/Status/index', $data);
     }
 }

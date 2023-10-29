@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62f756257e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +20,7 @@
 <body>
     <div class="text-white py-2 pl-2 sticky-top" style="background-color: #b6252a;"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+        <div class="container-fluid gap-3 mx-2">
             <a class="navbar-brand" href="">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
             </a>
@@ -53,6 +54,7 @@
                 </a>
                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li><a class="dropdown-item" href="<? base_url('/status') ?>">Status Pemesanan</a></li>
                 </ul>
             </div>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -60,6 +62,7 @@
             </form>
         </div>
     </nav>
+    <!-- NAVBAR -->
 
     <?= $this->renderSection('content'); ?>
   
@@ -80,6 +83,7 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
