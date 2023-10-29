@@ -18,8 +18,6 @@
         .bg {
             background: url('Assets/loginbg.jpg') no-repeat center center fixed;
             background-size: cover;
-            /* Untuk memastikan bahwa gambar background menutupi seluruh area */
-            /* Tambahan gaya CSS jika diperlukan */
         }
 
         .navbar-custom {
@@ -28,10 +26,12 @@
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 </head>
 
 <body class="account-body bg opacity-25">
-    <nav class="navbar navbar-light bg-white navbar-custom">
+    <nav class="navbar navbar-light bg-white navbar-custom sticky-top">
         <div class="mx-auto my-0 order-0 order-md-1 position-relative">
             <a class="navbar-brand" href="<?= base_url('/'); ?>">
                 <img src="/Assets/Logo_Rentit.png" width="150">
@@ -68,12 +68,17 @@
                                             <input id="password" type="password" placeholder="Password" class="form-control " name="password" value required>
                                         </div>
                                     </div>
-                                    <div class="form-group row mt-4">
-                                        <div class="col-sm-6">
+                                    <div class="form-group row my-3">
+                                        <div class="col">
                                             <div class="form-check form-switch">
                                                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                                                 <label class="form-check-label text-white" for="flexSwitchCheckDefault">Remember Me </label>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row my-3">
+                                        <div class="col text-center">
+                                            <a href="<?= base_url('/signup'); ?>" class="link-dark">Register Now</a>
                                         </div>
                                     </div>
                                     <div class="form-group  row my-3">
@@ -81,10 +86,6 @@
                                             Log In
                                             <i class="bi bi-arrow-right-circle"></i>
                                         </a>
-                                        <!-- <button class="btn btn-light btn-round btn-block text-dark" type="submit">
-                                            Log In
-                                            <i class="bi bi-arrow-right-circle"></i>
-                                        </button> -->
                                     </div>
                                 </form>
                             </div>
