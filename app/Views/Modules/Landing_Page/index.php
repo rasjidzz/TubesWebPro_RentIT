@@ -1,7 +1,6 @@
 <?= $this->extend('layout/template_nonAuth'); ?>
 
 <?= $this->section('content'); ?>
-
 <section>
     <div class="container" id="container1">
         <div class="container position-relative rounded-3" style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh; font-family: 'Open Sans', sans-serif; border-radius: 25px;">

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <h2>
-                ini masuk ke homepage
+                ini masuk ke homepage gifari
             </h2>
         </div>
         <div class="row">

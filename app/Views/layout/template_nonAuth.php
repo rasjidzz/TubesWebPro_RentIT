@@ -15,8 +15,8 @@
 </style>
 
 <body>
-    <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="text-white py-2 pl-2 sticky-top" style="background-color: #b6252a;"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
@@ -45,7 +45,7 @@
 
     <!-- Ambil Footer -->
 
-    <footer class="bg-dark p-3 fixed-bottom">
+    <footer class="bg-dark p-3 ">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center">
