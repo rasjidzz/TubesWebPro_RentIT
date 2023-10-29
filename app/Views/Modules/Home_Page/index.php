@@ -26,7 +26,6 @@
   }
 </style>
 <section>
-
   <!-- img background and buttton in img -->
   <div class="row background-row d-flex container-fluid" style="align-items: end; justify-content: center">
     <div class="d-flex" style="justify-content: center">
