@@ -54,7 +54,7 @@
                 </a>
                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    <li><a class="dropdown-item" href="<? base_url('/status') ?>">Status Pemesanan</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/status') ?>">Status Pemesanan</a></li>
                 </ul>
             </div>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -65,7 +65,7 @@
     <!-- NAVBAR -->
 
     <?= $this->renderSection('content'); ?>
-  
+
     <footer class="bg-dark p-3">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">

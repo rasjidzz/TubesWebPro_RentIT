@@ -10,13 +10,10 @@
 
 <div class="container d-flex border border-dark rounded-2" style="height: 200px; margin-bottom: 20px;">
     <div class="d-flex flex-column justify-content-center ms-3" style="z-index: 1;">
-        <p class="fs-1 text-danger text-center" >PERHATIAN!</p>
-        <p class="fs-4 text-center" >Kami sedang melakukan peninjauan mengenai laporan kerusakan anda, jika kami menemukan bahwa kerusakan tersebut merupakan ulah peminjam maka kami
+        <p class="fs-1 text-danger text-center">PERHATIAN!</p>
+        <p class="fs-4 text-center">Kami sedang melakukan peninjauan mengenai laporan kerusakan anda, jika kami menemukan bahwa kerusakan tersebut merupakan ulah peminjam maka kami
             akan memberikan denda dan jika bukan, maka kami akan segera memperbaiki fasilitas yang rusak.</p>
     </div>
 </div>
-
-
-
 
 <?= $this->endSection(); ?>
