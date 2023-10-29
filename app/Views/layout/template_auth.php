@@ -18,44 +18,49 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="fixed-top">
-        <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="">
-                    <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav fs-5">
-                        <li class="nav-item">
-                            <a class="nav-link <?= uri_string() === 'homepage' ? 'active' : '' ?>" href="<?= base_url('/homepage') ?>">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?= uri_string() === 'facility' ? 'active' : '' ?>" href="<?= base_url('/facility') ?>">Facility</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Other
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Pesanan</a></li>
-                                <li><a class="dropdown-item" href="#">Pembatalan</a></li>
-                                <li><a class="dropdown-item" href="#">Lapor Kerusakan</a></li>
-                                <li><a class="dropdown-item" href="#">Riwayat</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
-                </form>
+    <div class="text-white py-2 pl-2" style="background-color: #b6252a;"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky top">
+        <div class="container-fluid gap-3 mx-2">
+            <a class="navbar-brand" href="">
+                <img src="/Assets/Logo_Rentit.png" style="max-width: 100px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link <?= uri_string() === 'homepage' ? 'active' : '' ?>" href="<?= base_url('/homepage') ?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= uri_string() === 'facility' ? 'active' : '' ?>" href="<?= base_url('/facility') ?>">Facility</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Pesanan</a></li>
+                            <li><a class="dropdown-item" href="#">Pembatalan</a></li>
+                            <li><a class="dropdown-item" href="#">Lapor Kerusakan</a></li>
+                            <li><a class="dropdown-item" href="#">Riwayat</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+            <div class="flex-shrink-0 dropdown">
+                <a class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="Assets/cristiano_profile.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </nav>
     <!-- NAVBAR -->
 
     <?= $this->renderSection('content'); ?>
