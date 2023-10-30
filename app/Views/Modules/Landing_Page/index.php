@@ -2,8 +2,7 @@
 
 <?= $this->section('content'); ?>
 
-<section class="container-fluid my-3">
-    <!-- <div class="container-fluid my-3"> -->
+<section class="container-fluid my-3 bg-image">
     <div class="container-fluid position-relative rounded-3" style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh; font-family: 'Open Sans', sans-serif; border-radius: 25px;">
         <div class=" overlay rounded-3">
             <div class="row mt-5">
@@ -25,6 +24,8 @@
                     </a>
                 </div>
             </div>
+            <div class="row mt-5"></div>
+            <div class="row mt-5"></div>
             <div class="row mt-5"></div>
             <div class="row mt-5"></div>
             <div class="row mt-5">
@@ -64,7 +65,6 @@
             </div>
         </div>
     </div>
-    <!-- </div> -->
 </section>
 
 <style>
