@@ -19,3 +19,5 @@ $routes->get('/pembatalan', 'Modules\PembatalanPage::index');
 $routes->get('/pembatalan2', 'Modules\PembatalanPage::toPembatalan2');
 $routes->get('/pembayaran/tagihan', 'Modules\PembayaranPage2::index');
 $routes->get('/status', 'Modules\StatusPage::index');
+
+$routes->get('/adminpage', 'Admin\AdminPage::index');
