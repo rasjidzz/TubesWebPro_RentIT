@@ -43,7 +43,7 @@
                                     Kelas-kelas di gedung ini dirancang untuk memfasilitasi pembelajaran yang efektif dan suasana yang kondusif.
                                     Setiap ruangan dilengkapi dengan peralatan modern, seperti proyektor, layar proyeksi, dan papan tulis interaktif.
                                 </p>
-                                <a class="btn btn-danger">More Info</a>
+                                <a class="btn btn-danger" onclick="openMoreInfoModal()">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -167,5 +167,31 @@
         </div>
     </div>
 </section>
+
+<div class="modal" tabindex="-1" id="modalMoreInfo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMoreInfoModal() {
+        var myModal = document.getElementById("modalMoreInfo");
+        console.log("Masuk Modal");
+        myModal.show();
+    }
+</script>
 
 <?= $this->endSection(); ?>
