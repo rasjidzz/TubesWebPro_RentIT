@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Admin\AdminPage;
+// $currentRoute = current_url(true)->getUri;
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,40 +34,40 @@ use App\Controllers\Admin\AdminPage;
 
 </head>
 
-<body id="sidebar" style="background-color: rgb(0, 0, 0, 0.15);">
-    <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem; height: 100vh;">
+<body id="sidebar" class="d-flex " style="background-color: rgb(0, 0, 0, 0.15);">
+    <div class="d-flex flex-column flex-shrink-0 bg-light <?= (service('request')->uri->getSegment(1) == 'adminpage') ? 'd-none' : 'd-block'; ?>" style="width: 4.5rem; height: 100vh;">
         <a href="#" class="d-block p-0 link-dark text-decoration-none text-center   " title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Icon-only">
             <img src="/Assets/Logo_Rentit2.png" alt="logo" width="70px">
             <span class="visually-hidden">Icon-only</span>
         </a>
         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center mt-auto shadow-lg">
             <li class="nav-item">
-                <a href="<?= base_url('adminpage'); ?>" class="nav-link py-3 border-bottom" aria-current="page" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Home">
+                <a href="<?= base_url('adminpage'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'adminpage') ? ' active' : ''; ?>" aria-current="page" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Home">
                     <span class="mdi mdi-home fs-5 text-black" role="img" aria-label="Home"></span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('approved'); ?>" class="nav-link active py-3 border-bottom" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Approved">
+                <a href="<?= base_url('approved'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'approved') ? ' active' : ''; ?>" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Approved">
                     <span class="mdi mdi-account-check fs-5 text-black" role="img" aria-label="Approved"></span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('submission'); ?>" class="nav-link py-3 border-bottom" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Submission">
+                <a href="<?= base_url('submission'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'submission') ? ' active' : ''; ?>" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Submission">
                     <span class="mdi mdi-file-account fs-5 text-black" role="img" aria-label="Submission"></span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('declined'); ?>" class="nav-link py-3 border-bottom" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Declined">
+                <a href="<?= base_url('declined'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'declined') ? ' active' : ''; ?>" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Declined">
                     <span class="mdi mdi-account-remove fs-5 text-black" role="img" aria-label="Declined"></span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('cancellation'); ?>" class="nav-link py-3 border-bottom" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Cancellation">
+                <a href="<?= base_url('cancellation'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'cancellation') ? ' active' : ''; ?>" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Cancellation">
                     <span class="mdi mdi-account-cancel fs-5 text-black" role="img" aria-label="Cancellation"></span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('report'); ?>" class="nav-link py-3 border-bottom" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Report">
+                <a href="<?= base_url('report'); ?>" class="nav-link py-3 border-bottom <?= (service('request')->uri->getSegment(1) == 'report') ? ' active' : ''; ?>" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Report">
                     <span class="mdi mdi-account-alert fs-5 text-black" role="img" aria-label="Report"></span>
                 </a>
             </li>
@@ -86,7 +87,7 @@ use App\Controllers\Admin\AdminPage;
     <?= $this->renderSection('content'); ?>
 </body>
 
-
+<script></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
