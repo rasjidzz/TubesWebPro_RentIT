@@ -36,7 +36,7 @@ use App\Controllers\Admin\AdminPage;
 
 <body id="sidebar" class="d-flex " style="background-color: rgb(0, 0, 0, 0.15);">
     <div class="d-flex flex-column flex-shrink-0 bg-light <?= (service('request')->uri->getSegment(1) == 'adminpage') ? 'd-none' : 'd-block'; ?>" style="width: 4.5rem; height: 100vh;">
-        <a href="#" class="d-block p-0 link-dark text-decoration-none text-center   " title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Icon-only">
+        <a href="<?= base_url('adminpage'); ?>" class="d-block p-0 link-dark text-decoration-none text-center   " title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Icon-only">
             <img src="/Assets/Logo_Rentit2.png" alt="logo" width="70px">
             <span class="visually-hidden">Icon-only</span>
         </a>
