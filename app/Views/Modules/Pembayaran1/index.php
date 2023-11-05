@@ -19,80 +19,6 @@
             </div>
         </div>
         <h2 style="font-size: 25px; font-weight: bold;">Metode Pembayaran</h2>
-        <div class="row" style="margin-bottom: 50px;">
-            <div class="col">
-                <div class="card mb-3 text-center" style="background-color: #9F1521; border-radius: 20px;">
-                    <div class="card-body">
-                        <a class="btn" id="ck" onclick="openModal()" style=" 
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            margin: 40px;
-            border-radius: 10px;
-            font-size: 25px;
-            height: auto;
-            width: auto;
-            ">
-                            Transfer Bank
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card mb-3" style="background-color:#0096B9; border-radius: 20px;">
-                    <div class="card-body">
-                        <a class="btn" href="https://gopay.co.id/" style="
-            color: black;
-            font-weight: bold;
-            margin: 39px;
-            border-radius: 25px;
-            font-size: 25px;
-            ">
-                            <img src="/Assets/GopayLogo.png" alt="GOPAY">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card mb-3" style="background-color: #ECE8E8; border-radius: 20px;">
-                    <div class="card-body">
-                        <a class="btn" href="https://www.ovo.id/" style="
-            color: black;
-            font-weight: bold;
-            margin: 32px;
-            border-radius: 25px;
-            font-size: 25px;
-            ">
-                            <img src="/Assets/OVOLogo.png" alt="OVO">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card custon-card mb-3 text-center" style="background-color: #0F2337; border-radius: 20px;">
-                    <div class="card-body">
-                        <a class="btn" href="https://www.dana.id/" style="
-            color: rgb(255, 255, 255);
-            /* background-color: rgb(255, 255, 255); */
-            font-weight: bold;
-            margin: 41px;
-            border-radius: 20px;
-            font-size: 25px;
-            height: 50px;
-            width: 200px;
-            ">
-                            Lainnya
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="container align-center">
-            <a class="btn btn-danger border-3 rounded-5 text-center mb-5" id="ck" onclick="openModal()">Chechkout</a>
-        </div> -->
 
         <div class="modal" tabindex="-1" id="BankOPT">
             <div class="modal-dialog">
@@ -111,13 +37,63 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Close
                         </button>
-                        <button type="button" class="btn btn-primary">Lanjut Bayar</button>
+                        <a type="button" class="btn btn-primary" href= "<?= base_url('/pembayaran2') ?>">Lanjut Bayar</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container d-flex justify-content-evenly mt-3 mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3 h-100 w-100" data-bs-toggle="modal" data-bs-target="#BankOPT" style="background-color: #FFF6F6;">
+                    <div class="card-body d-flex align-items-center justify-content-center mx-4">
+                        <p class="card-text" style="font-weight: bold; color: #9F1521">Transfer Bank
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <a href="https://gopay.co.id/" target="_blank">
+                    <div class="card mb-3 h-100 w-100" style="background-color:#0096B9">
+                        <div class="card-body d-flex align-items-center justify-content-center mx-2">
+                            <img src="/Assets/GopayLogo.png" alt="Gopay">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    
+        <div class="row">
+            <div class="col">
+                <a href="https://www.ovo.id/" target="_blank">
+                    <div class="card mb-3 h-100 w-100" style="background-color: #ECE8E8">
+                        <div class="card-body d-flex align-items-center justify-content-center mx-2">
+                            <img src="/Assets/OvoLogo.png" alt="Ovo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3 h-100 w-100" style="background-color: #0F2337;">
+                    <div class="card-body d-flex align-items-center justify-content-center mx-5">
+                        <p class="card-text" style="color: antiquewhite; font-weight: bold">Lainnya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
@@ -155,3 +131,4 @@
     </style>
 </section>
 <?= $this->endSection(); ?>
+
