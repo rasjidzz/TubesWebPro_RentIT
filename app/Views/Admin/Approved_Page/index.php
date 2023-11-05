@@ -7,12 +7,12 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    /* @media screen(765px) {
-        
-    } */
+    .card-body {
+        border: 2.5px solid #388b6b;
+    }
 </style>
 
-<div class="container d-flex justify-content-center text-center">
+<div class="container justify-content-center text-center">
     <div class="row justify-content-between w-100">
         <div class="col-lg-6" id="box1">
             <div class="card shadow-sm mt-4">
@@ -27,7 +27,8 @@
                                     Ashar Syahbudi Saleh<br>
                                     1302210070<br>
                                     S1 Rekayasa Perangkat Lunak<br>
-                                    081234567890 <br><br><br><br>
+                                    081234567890 <br>
+                                    <a href="#" class="P text-black text-decoration-none">Peminjaman.pdf</a><br><br><br>
                                     3 November 2023
                                 </p>
                             </div>
@@ -49,7 +50,8 @@
                                     Ashar Syahbudi Saleh<br>
                                     1302210070<br>
                                     S1 Rekayasa Perangkat Lunak<br>
-                                    081234567890 <br><br><br><br>
+                                    081234567890 <br>
+                                    <a href="#" class="P text-black text-decoration-none">Peminjaman.pdf</a><br><br><br>
                                     3 November 2023
                                 </p>
                             </div>
@@ -71,7 +73,8 @@
                                     Ashar Syahbudi Saleh<br>
                                     1302210070<br>
                                     S1 Rekayasa Perangkat Lunak<br>
-                                    081234567890 <br><br><br><br>
+                                    081234567890 <br>
+                                    <a href="#" class="P text-black text-decoration-none">Peminjaman.pdf</a><br><br><br>
                                     3 November 2023
                                 </p>
                             </div>
@@ -82,5 +85,6 @@
         </div>
     </div>
 </div>
+
 
 <?= $this->endsection(); ?>
