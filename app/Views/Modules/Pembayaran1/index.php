@@ -32,7 +32,7 @@
             height: auto;
             width: auto;
             ">
-                            Tranfser Bank
+                            Transfer Bank
                         </a>
                     </div>
                 </div>
@@ -103,9 +103,9 @@
                     </div>
                     <div class="modal-body">
                         <p>Silakan Pilih Bank Yang Ingin Anda Gunakan</p>
-                        <button type="button" class="btn btn-info" >BCA</button>
-                        <button type="button" class="btn btn-primary" >Mandiri</button>
-                        <button type="button" class="btn btn-success" >BSI</button>
+                        <button type="button" class="btn btn-info">BCA</button>
+                        <button type="button" class="btn btn-primary">Mandiri</button>
+                        <button type="button" class="btn btn-success">BSI</button>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -118,20 +118,16 @@
         </div>
     </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
-        <script>
-            function openModal() {
-                $('#BankOPT').modal('show');
-            }
-            openModal();
-        </script>
+    <script>
+        function openModal() {
+            $('#BankOPT').modal('show');
+        }
+        openModal();
+    </script>
 
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
