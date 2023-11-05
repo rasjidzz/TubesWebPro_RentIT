@@ -23,3 +23,4 @@ $routes->get('/status', 'Modules\StatusPage::index');
 $routes->get('/adminpage', 'Admin\AdminPage::index');
 $routes->get('/approved', 'Admin\ApprovedPage::index');
 $routes->get('/submission', 'Admin\SubmissionPage::index');
+$routes->get('/test', 'Auth\Login::testData');
