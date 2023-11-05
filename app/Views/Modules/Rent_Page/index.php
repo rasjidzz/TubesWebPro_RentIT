@@ -96,7 +96,7 @@
             </div>
             <p id="acc" style="font-size: 12px; color:darkgrey;">Accepted File: .pdf .docx</p>
             <form action="" id="tombol">
-                <button class="btn btn-danger mt-3" type="submit">Ajukan Permintaan</button>
+                <a class="btn btn-danger mt-3" type="submit" href=" <?= base_url('/pembayaran') ?>">Ajukan Permintaan</a>
             </form>
         </div>
     </section>
