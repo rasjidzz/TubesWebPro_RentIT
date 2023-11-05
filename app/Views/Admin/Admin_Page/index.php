@@ -65,14 +65,14 @@
                     </a>
                 </div>
 
-                <div class="col-lg-3" id="rejected">
-                    <a href="<?= base_url('rejected'); ?>" class="text-decoration-none text-dark">
+                <div class="col-lg-3" id="declined">
+                    <a href="<?= base_url('declined'); ?>" class="text-decoration-none text-dark">
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <div class="icon-contain">
                                     <div class="row">
                                         <div class="col-8 align-self-center text-start">
-                                            <h5>0</h5>
+                                            <h5>3</h5>
                                             <p class="text-muted mb-0">Declined</p>
                                         </div>
                                         <div class="col-4">
