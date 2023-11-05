@@ -2,11 +2,11 @@
 
 <?= $this->section('content'); ?>
 
-<section class="container-fluid my-3 bg-image">
-    <div class="container-fluid position-relative rounded-3" style=" display:flex; justify-content: center;  background-image: url('/Assets/GKU.jpg'); background-size: cover; height: 80vh; font-family: 'Open Sans', sans-serif; border-radius: 25px;">
-        <div class=" overlay rounded-3">
-            <div class="row mt-5">
-            </div>
+<link rel="stylesheet" type="text/css" href="<?= base_url('Style/landing_page.css'); ?>">
+
+<div class="masthead" style="background-image: url('/Assets/GKU.jpg');">
+    <div class="color-overlay d-flex justify-content-center align-items-center rounded">
+        <div class="container-fluid">
             <div class="row mt-5">
                 <div class="" style="text-align: center; color: white;">
                     <h1 style="font-weight: bold; color: white;">SELAMAT DATANG, MAU SEWA FASILITAS ?</h1>
@@ -24,10 +24,6 @@
                     </a>
                 </div>
             </div>
-            <div class="row mt-5"></div>
-            <div class="row mt-5"></div>
-            <div class="row mt-5"></div>
-            <div class="row mt-5"></div>
             <div class="row mt-5">
                 <div class="col ms-3" style="text-align: start; color: white;">
                     <p class="fw-bold">Address</p>
@@ -65,7 +61,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
