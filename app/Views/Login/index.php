@@ -103,13 +103,24 @@
 
 <script>
     function login() {
-        console.log("Login");
-        $.ajax({
-            url: '<?= site_url('/test'); ?>',
-            method: 'GET',
-            success: function(response) {
-                console.log(response);
-            }
-        })
+        // console.log("Login");
+        // $.ajax({
+        //     url: '<?= site_url('/test'); ?>',
+        //     method: 'GET',
+        //     success: function(response) {
+        //         console.log(response);
+        //     }
+        // })
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        console.log('username : ' + username);
+        console.log('password : ' + password);
+        if (username == 'test' && password == 'inipassword') {
+            console.log('password benar!');
+            window.location.href = '/homepage';
+        } else if (username == 'user@admin' && password == 'iniadmin') {
+            console.log('password benar!');
+            window.location.href = '/adminpage';
+        }
     }
 </script>
