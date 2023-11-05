@@ -110,7 +110,7 @@
 
     <!-- button collapse for Sport -->
     <div class="row g-0">
-      <div class="collapse" id="multiCollapseExample3" style="width :100%"">
+      <div class="collapse" id="multiCollapseExample3" style="width :100%">
           <div class=" card card-body">
         <div class="dropdown row">
           <div class="col-6 ">
