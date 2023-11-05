@@ -26,16 +26,14 @@ use App\Controllers\Admin\AdminPage;
 
         .nav-pills .nav-link.active {
             background-color: #d32b31;
-            /* Mengubah warna latar belakang item aktif menjadi merah */
             color: white;
-            /* Mengubah warna teks agar terlihat jelas di atas latar belakang merah */
         }
     </style>
 
 </head>
 
-<body id="sidebar" class="d-flex " style="background-color: rgb(0, 0, 0, 0.15);">
-    <div class="d-flex flex-column flex-shrink-0 bg-light <?= (service('request')->uri->getSegment(1) == 'adminpage') ? 'd-none' : 'd-block'; ?>" style="width: 4.5rem; height: 100vh;">
+<body id="sidebar" class="d-flex sticky-left" style="background-color: rgb(0, 0, 0, 0.15); height: 100vh;">
+    <div class="d-flex flex-column flex-shrink-0 bg-light h-100 <?= (service('request')->uri->getSegment(1) == 'adminpage') ? 'd-none' : 'd-block'; ?>" style="width: 4.5rem; height: 100vh;">
         <a href="<?= base_url('adminpage'); ?>" class="d-block p-0 link-dark text-decoration-none text-center   " title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-orginial-title="Icon-only">
             <img src="/Assets/Logo_Rentit2.png" alt="logo" width="70px">
             <span class="visually-hidden">Icon-only</span>
