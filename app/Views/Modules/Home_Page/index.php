@@ -44,8 +44,8 @@
   </div>
 
   <!-- button collapse for gedung -->
-  <div class="container-fluid py-1 g-0" style="margin-top: 20px;">
-    <div class="row">
+  <div class="container px-0" style="margin-top: 20px;">
+    <div class="row mx-0">
       <div class="collapse " id="multiCollapseExample1" style="width :100%; padding-left: 0;padding-right: 0;">
         <div class="card card-body">
           <div class="dropdown row">
@@ -73,11 +73,12 @@
   </div>
 
   <!-- button collapse for Kelas -->
-  <div class="row">
-    <div class="collapse" id="multiCollapseExample2" style="width :100%">
+  <div class="container px-0 ">
+    <div class = "row">
+    <div class="collapse" id="multiCollapseExample2" style="width :100% ">
       <div class=" card card-body">
         <div class="dropdown row">
-          <div class="col-6 g-1 ">
+          <div class="col-6 ">
             <p class="fs-1">Gedung</p>
             <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
               <option selected>Pilih gedung</option>
@@ -87,7 +88,7 @@
               <option value="4">Gedung B</option>
             </select>
           </div>
-          <div class="col-2 g-1">
+          <div class="col-2">
             <p class="fs-1">Kelas</p>
             <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
               <option selected>Pilih Kelas</option>
@@ -96,7 +97,7 @@
               <option value="3">6.10</option>
             </select>
           </div>
-          <div class="col-4 g-1">
+          <div class="col-4">
             <p class="fs-1">Waktu</p>
             <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
             <div class="col" style="padding-top: 20px;">
@@ -106,12 +107,13 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
 
     <!-- button collapse for Sport -->
-    <div class="row g-0">
+    <div class="row g-1">
       <div class="collapse" id="multiCollapseExample3" style="width :100%"">
-          <div class=" card card-body">
+        <div class=" card card-body">
         <div class="dropdown row">
           <div class="col-6 ">
             <p class="fs-1">Sport</p>
@@ -128,7 +130,7 @@
             <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
             <div class="col" style="padding-top: 20px;">
               <!-- <button class="btn " style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</button> -->
-              <a class="btn " style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</a>
+              <a class="btn" href=" <?= base_url('/rentpage') ?>" style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</a>
             </div>
           </div>
         </div>
@@ -137,7 +139,7 @@
   </div>
   </div>
   <div class="row">
-    <h1 class="text-center fs-2 " style="color: #9f1521; padding-top: 100px;">About Rentit </h1>
+    <h1 class="text-center fs-2  mb-4" style="color: #9f1521; padding-top: 100px;">About Rentit </h1>
   </div>
 
   <!-- acordion for about Rentit -->
@@ -145,7 +147,7 @@
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             <strong>Apa itu Rentit ?</strong>
           </button>
         </h2>
