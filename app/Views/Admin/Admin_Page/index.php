@@ -113,7 +113,7 @@
                                 <div class="icon-contain">
                                     <div class="row">
                                         <div class="col-8 align-self-center text-start">
-                                            <h5>1</h5>
+                                            <h5>2</h5>
                                             <p class="text-muted mb-0">Cancellation</p>
                                         </div>
                                         <div class="col-4">

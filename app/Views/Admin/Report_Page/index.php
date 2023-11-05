@@ -9,7 +9,7 @@
 </style>
 
 <div class="container-lg justify-content-center">
-    <h1 class="text-center mt-5 mb-5">Permintaan Reservasi</h1>
+    <h1 class="text-center mt-5 mb-5">Laporan Kerusakan</h1>
 
     <div class="card card-body" style="background-color: #F4F5F6;">
         <table class="table table-responsive table-hover">
@@ -45,9 +45,8 @@
                     <td>
                         Jumat, 12:30 - 15.30
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-success btn-lg" style="width: 150px;">Accept</button><br><br>
-                        <button type="button" class="btn btn-danger btn-lg" style="width: 150px;">Deny</button>
+                    <td class="align-middle">
+                        <button type="button" class="btn btn-success btn-lg" style="width: 150px;">Done</button>
                     </td>
                 </tr>
                 <tr>
@@ -70,9 +69,8 @@
                     <td>
                         Selasa, 12:30 - 15.30
                     </td>
-                    <td>
-                        <button type="button" class="btn btn-success btn-lg" style="width: 150px;">Accept</button><br><br>
-                        <button type="button" class="btn btn-danger btn-lg" style="width: 150px;">Deny</button>
+                    <td class="align-middle">
+                        <button type="button" class="btn btn-success btn-lg" style="width: 150px;">Done</button>
                     </td>
                 </tr>
             </tbody>
