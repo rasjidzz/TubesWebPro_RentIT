@@ -2,6 +2,12 @@
 
 <?= $this->section('content'); ?>
 
+<style>
+    .container-lg {
+        min-height: 85vh;
+    }
+</style>
+
 <div class="container-lg">
     <div class="row justify-content-center">
         <h1 class="text-center font-family-Open Sans mt-4 ">Status</h1>

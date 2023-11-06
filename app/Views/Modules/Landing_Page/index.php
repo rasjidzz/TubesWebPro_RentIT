@@ -63,19 +63,4 @@
     </div>
 </div>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-    .overlay {
-        position: absolute;
-        margin: auto;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 0;
-    }
-</style>
-
 <?= $this->endSection(); ?>
