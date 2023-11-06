@@ -49,7 +49,7 @@
       <div class="collapse " id="multiCollapseExample1" style="width :100%; padding-left: 0;padding-right: 0;">
         <div class="card card-body">
           <div class="dropdown row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <p class="fs-1">Gedung</p>
               <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
                 <option selected>Pilih gedung</option>
@@ -58,7 +58,7 @@
                 <option value="3">GSG (Gedung Serba Guna)</option>
               </select>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <p class="fs-1">Waktu</p>
               <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
               <div class="col" style="padding-top: 20px;">
@@ -74,39 +74,39 @@
 
   <!-- button collapse for Kelas -->
   <div class="container px-0 ">
-    <div class = "row">
-    <div class="collapse" id="multiCollapseExample2" style="width :100% ">
-      <div class=" card card-body">
-        <div class="dropdown row">
-          <div class="col-6 ">
-            <p class="fs-1">Gedung</p>
-            <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
-              <option selected>Pilih gedung</option>
-              <option value="1">Telkom University Landmark Tower</option>
-              <option value="2">Gedung Kuliah Umum</option>
-              <option value="3">Gedung A</option>
-              <option value="4">Gedung B</option>
-            </select>
-          </div>
-          <div class="col-2">
-            <p class="fs-1">Kelas</p>
-            <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
-              <option selected>Pilih Kelas</option>
-              <option value="1">07.13</option>
-              <option value="2">03.11</option>
-              <option value="3">6.10</option>
-            </select>
-          </div>
-          <div class="col-4">
-            <p class="fs-1">Waktu</p>
-            <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
-            <div class="col" style="padding-top: 20px;">
-              <!-- <button class="btn " style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</button> -->
-              <a class="btn" href=" <?= base_url('/rentpage') ?>" style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</a>
+    <div class="row">
+      <div class="collapse" id="multiCollapseExample2" style="width :100% ">
+        <div class=" card card-body">
+          <div class="dropdown row">
+            <div class="col-lg-6 ">
+              <p class="fs-1">Gedung</p>
+              <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
+                <option selected>Pilih gedung</option>
+                <option value="1">Telkom University Landmark Tower</option>
+                <option value="2">Gedung Kuliah Umum</option>
+                <option value="3">Gedung A</option>
+                <option value="4">Gedung B</option>
+              </select>
+            </div>
+            <div class="col-lg-2">
+              <p class="fs-1">Kelas</p>
+              <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
+                <option selected>Pilih Kelas</option>
+                <option value="1">07.13</option>
+                <option value="2">03.11</option>
+                <option value="3">6.10</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+              <p class="fs-1">Waktu</p>
+              <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
+              <div class="col" style="padding-top: 20px;">
+                <!-- <button class="btn " style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</button> -->
+                <a class="btn" href=" <?= base_url('/rentpage') ?>" style="background-color: #9f1521; color: #fff;border-color: #9f1521;">Submit</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -115,7 +115,7 @@
       <div class="collapse" id="multiCollapseExample3" style="width :100%"">
         <div class=" card card-body">
         <div class="dropdown row">
-          <div class="col-6 ">
+          <div class="col-lg-6 ">
             <p class="fs-1">Sport</p>
             <select class="form-select form-select-lg mb-3 col-4" aria-label="Large select example">
               <option selected>Pilih Lapangan</option>
@@ -125,7 +125,7 @@
               <option value="4">Kolam Renang</option>
             </select>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6">
             <p class="fs-1">Waktu</p>
             <input type="text" class="form-control  form-select-lg mb-3 col-4" aria-label="Large select example" placeholder="Contoh : 12.30-15.30">
             <div class="col" style="padding-top: 20px;">
